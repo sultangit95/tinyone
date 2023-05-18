@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+/* font-family: 'PT Sans', sans-serif; */
+/* ===== common css starts ===== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  vertical-align: middle;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+/* ===== common css ends ===== */
+/* ===== root starts ===== */
+:root{
+  --brand: #fcdb00;
+  --brand2: #010101;
+  --white: #ffffff;
+  --font: 'PT Sans', sans-serif;
+  --pcol: #313841;
+}
+/* ===== root ends ===== */
+/* ===== navbar css starts ===== */
+.navbar{
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background: var(--brand);
+}
+.navbar ul li a{
+  color: var(--brand2);
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 80px;
+  padding: 15px 5px;
+  position: relative;
+}
+.navbar ul li a::after{
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: var(--brand2);
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  transition: .5s;
+  opacity: 0;
+}
+.navbar ul li a:hover::after{
+  bottom: 0;
+  opacity: 1;
+}
+/* ===== navbar css ends ===== */
+/* ===== banner css starts ===== */
+.carousel-inner .bg{
+  background: var(--brand);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.details .text h1{
+  color: var(--brand2);
+  font-family: var(--font);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.details .text h2{
+  color: var(--pcol);
+  font-size: 20px;
+  font-family: var(--font);
+  font-weight: normal;
+  padding-right: 190px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.details .text p{
+  color: #555555;
+  font-size: 16px;
+  font-family: var(--font);
+  font-weight: normal;
+  padding-right: 120px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.details .icon{
+  width: 222px;
+}
+.details .icon ul li{
+  color: var(--brand2);
+  font-size: 42px;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: all linear .2s;
+}
+.details .icon ul li:hover{
+  transform: scale(1.3);
+}
+.image-area .phone-body{
+  width: 320px;
+  height: 470px;
+  background: var(--white);
+  box-shadow: 0 0 10px #010101;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 190px;
+  margin-bottom: 100px;
+  flex-direction: column;
+  position: relative;
+}
+.image-area .phone-body .parts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.image-area .phone-body .camera{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--brand2);
+  margin-right: 10px;
+}
+.image-area .phone-body .speaker{
+  width: 50px;
+  height: 10px;
+  border-radius: 30px;
+  background: var(--brand2);
+}
+.image-area .phone-body .fingerprint{
+  width: 50px;
+  height: 30px;
+  border-radius: 30px;
+  background: var(--brand2);
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.image-area .phone-body .display{
+  width: 90%;
+  height: 80%;
+  background: var(--brand2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid var(--brand2);
+  cursor: pointer;
+  border-radius: 2px;
+}
+.image-area .phone-body .display .overlay{
+  width: 100%;
+  height: 100%;
+  background: url("../images/scroll-2.png") no-repeat top / cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all linear 10s;
+}
+.image-area .phone-body .display:hover .overlay{
+  background: url("../images/scroll-2.png") no-repeat bottom / cover;
+}
+.carousel-indicators [data-bs-target] {
+	width: 14px;
+	height: 14px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+/* ===== banner css ends ===== */
+/* ===== features css starts ===== */
+#features{
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+#features .heading h1{
+  color: var(--brand2);
+  font-size: 32px;
+  font-family: var(--font);
+  font-weight: bold;
+}
+#features .heading p{
+  color: #5d6672;
+  font-size: 18px;
+  font-family: var(--font);
+  font-weight: normal;
+  padding: 0 250px;
+}
+#features .feature-details .icon-area{
+  width: 100px;
+}
+#features .feature-details .icon-area img{
+  width: 120%;
+}
+#features .feature-details .text-area{
+  margin-left: 30px;
+}
+#features .feature-details .text-area h3{
+  color: var(--brand2);
+  font-family: var(--font);
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+#features .feature-details .text-area p{
+  color: #898989;
+  font-family: var(--font);
+  font-weight: normal;
+  font-size: 16px;
+  padding-right: 50px;
+}
+/* ===== features css ends ===== */
+/* ===== contact css starts ===== */
+#contact{
+  background: var(--brand2);
+  padding: 80px 0;
+}
+#contact .heading h1{
+  color: var(--brand);
+  font-size: 32px;
+  font-family: var(--font);
+  font-weight: bold;
+}
+#contact .heading p{
+  color: #5d6672;
+  font-size: 18px;
+  font-family: var(--font);
+  font-weight: normal;
+  padding: 0 190px;
+}
+#contact .form{
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+#contact .form input{
+  padding: 10px 20px;
+  width: 50%;
+  border-radius: 3px;
+  border: none;
+  color: var(--font);
+  font-size: 16px;
+  font-family: var(--font);
+  font-weight: normal;
+}
+#contact .form input:focus{
+  outline: none;
+}
+#contact .form button{
+  text-transform: uppercase;
+  color: var(--brand2);
+  background: var(--brand);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 10px;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: bold;
+  transition: all linear .3s;
+}
+#contact .form button:hover{
+  box-shadow: 0 0 20px var(--brand);
+}
+#contact .social ul li{
+  display: inline;
+  margin-left: 20px;
+}
+#contact .social ul li:first-child{
+  margin-left: 0;
+}
+#contact .social ul li i{
+  font-size: 30px;
+  color: var(--brand2);
+  height: 36px;
+  width: 36px;
+  background: var(--brand);
+  border-radius: 3px;
+  line-height: 36px;
+  cursor: pointer;
+  transition: all linear .3s;
+}
+#contact .social ul li i:hover{
+  transform: scale(1.2);
+}
+/* ===== contact css ends ===== */
+/* ===== footer css starts ===== */
+#footer{
+  background: var(--brand2);
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+#footer p{
+  color: #fff;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: normal;
+  padding-right: 110px;
+}
+#footer ul li{
+  color: #fff;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: all linear .3s;
+}
+#footer ul li:hover{
+  margin-left: 10px;
+  color: var(--brand);
+}
+/* ===== footer css ends ===== */
+/* ===== copyrights css starts ===== */
+#copyright{
+  background: var(--brand2);
+  border-top: 1px solid var(--brand);
+}
+#copyright p{
+  color: #fff;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  padding: 30px 0;
+  text-transform: capitalize;
+}
+#copyright p span{
+  color: var(--brand);
+}
+/* ===== copyrights css ends ===== */

@@ -1,0 +1,114 @@
+@media (min-width: 320px) and (max-width: 575px){
+  .navbar {
+    padding: 30px 10px;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+  }
+  .navbar ul li{
+    margin-bottom: 30px;
+  }
+  .navbar ul li:first-child{
+    margin-top: 30px;
+  }
+  .navbar ul li a{
+    margin-left: 0;
+  }
+  .carousel-inner .bg{
+    padding-bottom: 100px;
+  }
+  .details .icon{
+    margin: auto;
+  }
+  .details .text h1{
+    font-size: 26px;
+  }
+  .details .text h2{
+    font-size: 16px;
+    padding-right: 0;
+  }
+  .details .text p{
+    padding-right: 0;
+  }
+  .details .icon ul li:last-child{
+    margin-right: 0;
+  }
+  .image-area .phone-body{
+    width: 280px;
+    margin: 20px auto;
+  }
+  .carousel-indicators [data-bs-target] {
+    margin-top: 60px;
+  }
+  #features{
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  #features .heading p{
+    font-size: 16px;
+    padding: 0;
+  }
+  #features .feature-details .icon-area{
+    width: 100px;
+  }
+  #features .feature-details .icon-area img{
+    width: 100%;
+  }
+  #features .feature-details .text-area{
+    margin-left: 20px;
+  }
+  #features .feature-details .text-area p{
+    padding-right: 0;
+  }
+  #contact{
+    padding: 80px 0;
+  }
+  #contact .heading h1{
+    font-size: 28px;
+  }
+  #contact .heading p{
+    padding: 0;
+  }
+  #contact .form{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  #contact .form input{
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #contact .form input:focus{
+    outline: none;
+  }
+  #footer{
+    padding-top: 20px;
+  }
+  #footer p{
+    padding-right: 0;
+  }
+  #footer ul li{
+    color: #fff;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+
+}
+
+@media (min-width: 578px) and (max-width: 991px){
+  
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+  
+}
