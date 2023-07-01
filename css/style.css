@@ -321,7 +321,7 @@ img{
   transition: all linear .3s;
 }
 #footer ul li:hover{
-  margin-left: 10px;
+  margin-left: 5px;
   color: var(--brand);
 }
 /* ===== footer css ends ===== */
